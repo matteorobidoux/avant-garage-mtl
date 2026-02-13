@@ -1,0 +1,31 @@
+{
+	"sectionLabel": "What We Offer",
+	"heading": "Concierge Services",
+	"intro": "From the first conversation to the moment you drive away, every detail is handled with precision and care.",
+	"services": [
+		{
+			"id": 1,
+			"icon": "Search",
+			"title": "Vehicle Recommendations",
+			"description": "Tell us your lifestyle, needs, and budget. We do the research and present you with the best options — no bias, no upselling."
+		},
+		{
+			"id": 2,
+			"icon": "ClipboardCheck",
+			"title": "Pre-Purchase Inspection",
+			"description": "Never buy blind. We coordinate thorough mechanical inspections on any vehicle before you commit a single dollar."
+		},
+		{
+			"id": 3,
+			"icon": "Truck",
+			"title": "Delivery Coordination",
+			"description": "We manage the full logistics — from securing the deal to ensuring your vehicle arrives in perfect condition."
+		},
+		{
+			"id": 4,
+			"icon": "BadgeDollarSign",
+			"title": "Financing Advice",
+			"description": "We help you navigate financing options clearly and honestly, so you understand exactly what you're signing."
+		}
+	]
+}

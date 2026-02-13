@@ -1,0 +1,64 @@
+{
+	"sectionLabel": "Get In Touch",
+	"heading": "Let's Find Your Next Car",
+	"subheading": "Fill out the form and we'll get back to you within 24 hours. No commitment required — just a conversation.",
+	"formFields": [
+		{
+			"id": "name",
+			"label": "Your Name",
+			"type": "text",
+			"placeholder": "John Doe",
+			"required": true
+		},
+		{
+			"id": "email",
+			"label": "Email Address",
+			"type": "email",
+			"placeholder": "john@example.com",
+			"required": true
+		},
+		{
+			"id": "phone",
+			"label": "Phone Number",
+			"type": "tel",
+			"placeholder": "(514) 000-0000",
+			"required": false
+		},
+		{
+			"id": "budget",
+			"label": "Approximate Budget",
+			"type": "select",
+			"required": false,
+			"options": [
+				{ "value": "", "label": "Select a range" },
+				{ "value": "under-20k", "label": "Under $20,000" },
+				{ "value": "20-40k", "label": "$20,000 – $40,000" },
+				{ "value": "40-70k", "label": "$40,000 – $70,000" },
+				{ "value": "70-100k", "label": "$70,000 – $100,000" },
+				{ "value": "100k+", "label": "$100,000+" }
+			]
+		},
+		{
+			"id": "message",
+			"label": "Tell Me About Your Dream Car",
+			"type": "textarea",
+			"placeholder": "What are you looking for? Daily driver, weekend car, SUV for the family? Any specifics in mind?",
+			"required": false,
+			"rows": 4
+		}
+	],
+	"submitText": "Send My Request",
+	"successMessage": "Thank you! We'll be in touch within 24 hours.",
+	"socialLinks": [
+		{
+			"platform": "Instagram",
+			"handle": "@avantgarage.mtl",
+			"url": "https://instagram.com/avantgarage.mtl"
+		},
+		{
+			"platform": "Facebook",
+			"handle": "Avant Garage MTL",
+			"url": "https://www.facebook.com/profile.php?id=61560963511482"
+		}
+	]
+}
