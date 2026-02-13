@@ -1,5 +1,3 @@
-import React from "react";
-import site from "../data/site.json";
 import logoImg from "../images/logo.webp";
 
 export default function Footer() {

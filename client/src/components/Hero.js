@@ -1,10 +1,7 @@
-import React, { useEffect, useRef } from "react";
 import hero from "../data/hero.json";
 import porscheImg from "../images/gt3rs.webp";
 
 export default function Hero() {
-	const videoRef = useRef(null);
-
 	const handleCta = () => {
 		document
 			.querySelector(hero.ctaAnchor)

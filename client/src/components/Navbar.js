@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from "react";
-import site from "../data/site.json";
 import logoImg from "../images/logo.webp";
 
 function LogoMark() {
