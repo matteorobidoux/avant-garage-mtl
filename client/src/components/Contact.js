@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
+import emailjs from "@emailjs/browser";
 import contact from "../data/contact.json";
 import site from "../data/site.json";
 
@@ -79,11 +80,46 @@ export default function Contact() {
 			return;
 		}
 		setLoading(true);
-		// Simulate form submission (replace with real endpoint)
-		setTimeout(() => {
-			setLoading(false);
-			setSubmitted(true);
-		}, 1500);
+
+		// EmailJS configuration — replace these with your actual values
+		const SERVICE_ID = "service_y8o82rq"; // from EmailJS dashboard
+		const TEMPLATE_ID = "template_bq9rx1b"; // from your template
+		const PUBLIC_KEY = "7oedkCjFwzGorsuo5"; // from Account → API Keys
+
+		// Send email via EmailJS
+		emailjs
+			.send(
+				SERVICE_ID,
+				TEMPLATE_ID,
+				{
+					from_name: formData.name,
+					reply_email: formData.email,
+					phone: formData.phone || "Not provided",
+					budget: formData.budget || "Not specified",
+					message: formData.message || "No message"
+				},
+				PUBLIC_KEY
+			)
+			.then(() => {
+				setLoading(false);
+				setSubmitted(true);
+				// Reset form after 3 seconds
+				setTimeout(() => {
+					setSubmitted(false);
+					setFormData({
+						name: "",
+						email: "",
+						phone: "",
+						budget: "",
+						message: ""
+					});
+				}, 3000);
+			})
+			.catch((error) => {
+				setLoading(false);
+				console.error("EmailJS Error:", error);
+				alert("Failed to send message. Please try again or email directly.");
+			});
 	};
 
 	const inputBase =
